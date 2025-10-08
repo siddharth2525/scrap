@@ -1,6 +1,6 @@
 -----------------------------------------------------------
 Contents:
-{"parts":[{"text":"hello"}],"role":"user"}
+{"parts":[{"text":"hello please"}],"role":"user"}
 -----------------------------------------------------------
 Functions:
 read_gcs_file_tool: {'bucket_name': {'type': <Type.STRING: 'STRING'>}, 'file_path': {'type': <Type.STRING: 'STRING'>}} -> {}
@@ -11,29 +11,29 @@ list_dataflow_recent_jobs: {'num_jobs': {'default': 10, 'type': <Type.INTEGER: '
 summarize_dataflow_error_logs_tool: {'time_window_minutes': {'default': 60, 'type': <Type.INTEGER: 'INTEGER'>}} -> {}
 -----------------------------------------------------------
 
-2025-10-09 02:09:02,027 - INFO - models.py:8217 - AFC is enabled with max remote calls: 10.
-2025-10-09 02:09:02,039 - DEBUG - _default.py:329 - Checking None for explicit credentials as part of auth process...
-2025-10-09 02:09:02,040 - DEBUG - _default.py:299 - Checking Cloud SDK credentials as part of auth process...
+2025-10-09 02:21:52,877 - INFO - models.py:8217 - AFC is enabled with max remote calls: 10.
+2025-10-09 02:21:52,882 - DEBUG - _default.py:329 - Checking None for explicit credentials as part of auth process...
+2025-10-09 02:21:52,883 - DEBUG - _default.py:299 - Checking Cloud SDK credentials as part of auth process...
 C:\Users\Siddharth.Singh2\code playground\.df\Lib\site-packages\google\auth\_default.py:108: UserWarning: Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a "quota exceeded" or "API not enabled" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds.
   warnings.warn(_CLOUD_SDK_CREDENTIALS_WARNING)
-2025-10-09 02:09:04,243 - DEBUG - connectionpool.py:1049 - Starting new HTTPS connection (1): oauth2.googleapis.com:443
-2025-10-09 02:09:04,956 - DEBUG - connectionpool.py:544 - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
-2025-10-09 02:09:04,967 - DEBUG - _trace.py:87 - connect_tcp.started host='us-central1-aiplatform.googleapis.com' port=443 local_address=None timeout=None socket_options=None
-2025-10-09 02:09:04,982 - DEBUG - _trace.py:87 - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002288B0F7CB0>
-2025-10-09 02:09:04,983 - DEBUG - _trace.py:87 - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002288B01DBE0> server_hostname='us-central1-aiplatform.googleapis.com' timeout=None
-2025-10-09 02:09:05,003 - DEBUG - _trace.py:87 - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002288B023D90>
-2025-10-09 02:09:05,005 - DEBUG - _trace.py:87 - send_request_headers.started request=<Request [b'POST']>
-2025-10-09 02:09:05,007 - DEBUG - _trace.py:87 - send_request_headers.complete
-2025-10-09 02:09:05,008 - DEBUG - _trace.py:87 - send_request_body.started request=<Request [b'POST']>
-2025-10-09 02:09:05,010 - DEBUG - _trace.py:87 - send_request_body.complete
-2025-10-09 02:09:05,011 - DEBUG - _trace.py:87 - receive_response_headers.started request=<Request [b'POST']>
-2025-10-09 02:09:06,905 - DEBUG - _trace.py:87 - receive_response_headers.complete return_value=(b'HTTP/1.1', 403, b'Forbidden', [(b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 08 Oct 2025 20:39:06 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
-2025-10-09 02:09:06,908 - INFO - _client.py:1740 - HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/neat-striker-447409-t5/locations/us-central1/publishers/google/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
-2025-10-09 02:09:06,910 - DEBUG - _trace.py:87 - receive_response_body.started request=<Request [b'POST']>
-2025-10-09 02:09:06,913 - DEBUG - _trace.py:87 - receive_response_body.complete
-2025-10-09 02:09:06,914 - DEBUG - _trace.py:87 - response_closed.started
-2025-10-09 02:09:06,917 - DEBUG - _trace.py:87 - response_closed.complete
-2025-10-09 02:09:07,021 - ERROR - adk_web_server.py:1284 - Error in event_generator: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': "Permission 'aiplatform.endpoints.predict' denied on resource '//aiplatform.googleapis.com/projects/neat-striker-447409-t5/locations/us-central1/publishers/google/models/gemini-2.5-flash' (or it may not exist).", 'status': 'PERMISSION_DENIED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'IAM_PERMISSION_DENIED', 'domain': 'aiplatform.googleapis.com', 'metadata': {'resource': 'projects/neat-striker-447409-t5/locations/us-central1/publishers/google/models/gemini-2.5-flash', 'permission': 'aiplatform.endpoints.predict'}}]}}
+2025-10-09 02:21:55,588 - DEBUG - connectionpool.py:1049 - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-10-09 02:21:56,283 - DEBUG - connectionpool.py:544 - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-10-09 02:21:56,286 - DEBUG - _trace.py:87 - connect_tcp.started host='us-central1-aiplatform.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-09 02:21:56,304 - DEBUG - _trace.py:87 - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001996D41C050>
+2025-10-09 02:21:56,305 - DEBUG - _trace.py:87 - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001996D30DD90> server_hostname='us-central1-aiplatform.googleapis.com' timeout=None
+2025-10-09 02:21:56,317 - DEBUG - _trace.py:87 - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001996D3EC910>
+2025-10-09 02:21:56,317 - DEBUG - _trace.py:87 - send_request_headers.started request=<Request [b'POST']>
+2025-10-09 02:21:56,318 - DEBUG - _trace.py:87 - send_request_headers.complete
+2025-10-09 02:21:56,319 - DEBUG - _trace.py:87 - send_request_body.started request=<Request [b'POST']>
+2025-10-09 02:21:56,319 - DEBUG - _trace.py:87 - send_request_body.complete
+2025-10-09 02:21:56,320 - DEBUG - _trace.py:87 - receive_response_headers.started request=<Request [b'POST']>
+2025-10-09 02:21:58,088 - DEBUG - _trace.py:87 - receive_response_headers.complete return_value=(b'HTTP/1.1', 403, b'Forbidden', [(b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 08 Oct 2025 20:51:57 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2025-10-09 02:21:58,090 - INFO - _client.py:1740 - HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/neat-striker-447409-t5/locations/us-central1/publishers/google/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2025-10-09 02:21:58,091 - DEBUG - _trace.py:87 - receive_response_body.started request=<Request [b'POST']>
+2025-10-09 02:21:58,092 - DEBUG - _trace.py:87 - receive_response_body.complete
+2025-10-09 02:21:58,092 - DEBUG - _trace.py:87 - response_closed.started
+2025-10-09 02:21:58,092 - DEBUG - _trace.py:87 - response_closed.complete
+2025-10-09 02:21:58,139 - ERROR - adk_web_server.py:1284 - Error in event_generator: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': "Permission 'aiplatform.endpoints.predict' denied on resource '//aiplatform.googleapis.com/projects/neat-striker-447409-t5/locations/us-central1/publishers/google/models/gemini-2.5-flash' (or it may not exist).", 'status': 'PERMISSION_DENIED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'IAM_PERMISSION_DENIED', 'domain': 'aiplatform.googleapis.com', 'metadata': {'resource': 'projects/neat-striker-447409-t5/locations/us-central1/publishers/google/models/gemini-2.5-flash', 'permission': 'aiplatform.endpoints.predict'}}]}}
 Traceback (most recent call last):
   File "C:\Users\Siddharth.Singh2\code playground\.df\Lib\site-packages\google\adk\cli\adk_web_server.py", line 1274, in event_generator
     async for event in agen:
@@ -143,5 +143,5 @@ Traceback (most recent call last):
   File "C:\Users\Siddharth.Singh2\code playground\.df\Lib\site-packages\google\genai\errors.py", line 159, in raise_for_async_response
     raise ClientError(status_code, response_json, response)
 google.genai.errors.ClientError: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': "Permission 'aiplatform.endpoints.predict' denied on resource '//aiplatform.googleapis.com/projects/neat-striker-447409-t5/locations/us-central1/publishers/google/models/gemini-2.5-flash' (or it may not exist).", 'status': 'PERMISSION_DENIED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'IAM_PERMISSION_DENIED', 'domain': 'aiplatform.googleapis.com', 'metadata': {'resource': 'projects/neat-striker-447409-t5/locations/us-central1/publishers/google/models/gemini-2.5-flash', 'permission': 'aiplatform.endpoints.predict'}}]}}
-INFO:     127.0.0.1:52320 - "GET /apps/dataflow_agent/users/user/sessions/f414d5ee-540e-4de3-b8a6-2ba9e743c358 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58025 - "GET /debug/trace/session/f414d5ee-540e-4de3-b8a6-2ba9e743c358 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56597 - "GET /apps/dataflow_agent/users/user/sessions/4cca4e09-83c3-4439-88fb-87474ad21491 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54446 - "GET /debug/trace/session/4cca4e09-83c3-4439-88fb-87474ad21491 HTTP/1.1" 200 OK
